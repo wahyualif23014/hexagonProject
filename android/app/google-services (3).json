@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "834535690693",
+    "firebase_url": "https://hexagon-63917-default-rtdb.firebaseio.com",
+    "project_id": "hexagon-63917",
+    "storage_bucket": "hexagon-63917.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834535690693:android:9449eef4ef6b0e2f84bbac",
+        "android_client_info": {
+          "package_name": "hexagon.hega"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3ANmiWbk2E5G_CgNhbR0Lv482-5wNVbI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

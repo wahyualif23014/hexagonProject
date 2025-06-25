@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../service/controler.dart';
-import '../models/hero_model.dart';
+import '../../../data/services/controler.dart';
+import '../../../data/models/hero_model.dart';
 
 class AddActivityPage extends StatelessWidget {
   final titleC = TextEditingController();

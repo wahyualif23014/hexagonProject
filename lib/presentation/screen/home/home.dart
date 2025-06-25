@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../service/controler.dart';
-import 'add.dart';
-import 'detail.dart';
+import '../../../data/services/controler.dart';
+import '../activities/add.dart';
+import '../activities/detail.dart';
 
 class HomePage extends StatelessWidget {
   final controller = Get.put(ActivityController());

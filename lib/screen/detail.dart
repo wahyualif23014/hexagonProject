@@ -16,8 +16,10 @@ class ActivityDetailPage extends StatelessWidget {
     return FutureBuilder<Activity?>(
       future: controller.getById(activityId),
       builder: (context, snapshot) {
-        if (snapshot.connectionState == ConnectionState.waiting) return Center(child: CircularProgressIndicator());
-        if (!snapshot.hasData) return Center(child: Text("Data tidak ditemukan"));
+        if (snapshot.connectionState == ConnectionState.waiting)
+          return Center(child: CircularProgressIndicator());
+        if (!snapshot.hasData)
+          return Center(child: Text("Data tidak ditemukan"));
 
         final activity = snapshot.data!;
         titleC.text = activity.title;
@@ -29,9 +31,15 @@ class ActivityDetailPage extends StatelessWidget {
             padding: const EdgeInsets.all(16.0),
             child: Column(
               children: [
-                TextField(controller: titleC, decoration: InputDecoration(labelText: "Judul")),
+                TextField(
+                  controller: titleC,
+                  decoration: InputDecoration(labelText: "Judul"),
+                ),
                 SizedBox(height: 12),
-                TextField(controller: descC, decoration: InputDecoration(labelText: "Deskripsi")),
+                TextField(
+                  controller: descC,
+                  decoration: InputDecoration(labelText: "Deskripsi"),
+                ),
                 SizedBox(height: 24),
                 ElevatedButton(
                   onPressed: () async {
@@ -42,7 +50,7 @@ class ActivityDetailPage extends StatelessWidget {
                     Get.back();
                   },
                   child: Text("Update"),
-                )
+                ),
               ],
             ),
           ),
